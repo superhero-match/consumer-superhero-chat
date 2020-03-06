@@ -1,0 +1,25 @@
+db:
+  host: 'localhost'
+  port: 3306
+  user: 'root'
+  password: 'Kolian18**'
+  name: 'chat'
+
+consumer:
+  brokers: ['localhost:9092']
+  topic: 'store.chat.message'
+
+cache:
+  address: 'localhost'
+  port: ':6379'
+  password: 'Awesome85**'
+  db: 0
+  pool_size: 25
+  minimum_idle_connections: 10
+  maximum_retries: 1
+  message_key_format: 'message.for.%s'
+  token_key_format: 'token.%s'
+
+firebase:
+  function_address: 'https://us-central1-superheromatch.cloudfunctions.net/newMessage'
+  content_type: 'application/json'
