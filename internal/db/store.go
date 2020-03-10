@@ -14,7 +14,7 @@
 package db
 
 import (
-	"github.com/consumer-superhero-chat/internal/db/model"
+	"github.com/superhero-match/consumer-superhero-chat/internal/db/model"
 )
 
 //'test_id',

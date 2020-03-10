@@ -18,7 +18,7 @@ import (
 
 	"github.com/segmentio/kafka-go"
 
-	"github.com/consumer-superhero-chat/internal/config"
+	"github.com/superhero-match/consumer-superhero-chat/internal/config"
 )
 
 // Consumer holds Kafka consumer related data.

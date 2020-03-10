@@ -20,10 +20,10 @@ import (
 	"github.com/google/uuid"
 	"strings"
 
-	cm "github.com/consumer-superhero-chat/internal/cache/model"
-	"github.com/consumer-superhero-chat/internal/consumer/model"
-	dbm "github.com/consumer-superhero-chat/internal/db/model"
-	fm "github.com/consumer-superhero-chat/internal/firebase/model"
+	cm "github.com/superhero-match/consumer-superhero-chat/internal/cache/model"
+	"github.com/superhero-match/consumer-superhero-chat/internal/consumer/model"
+	dbm "github.com/superhero-match/consumer-superhero-chat/internal/db/model"
+	fm "github.com/superhero-match/consumer-superhero-chat/internal/firebase/model"
 )
 
 // Read consumes the Kafka topic and stores the match to DB.
