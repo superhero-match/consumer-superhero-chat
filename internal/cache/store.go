@@ -15,7 +15,7 @@ package cache
 
 import (
 	"fmt"
-	"github.com/consumer-superhero-chat/internal/cache/model"
+	"github.com/superhero-match/consumer-superhero-chat/internal/cache/model"
 )
 
 // StoreMessage stores message under one key into list.

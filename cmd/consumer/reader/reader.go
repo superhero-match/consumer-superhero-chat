@@ -14,11 +14,11 @@
 package reader
 
 import (
-	"github.com/consumer-superhero-chat/internal/cache"
-	"github.com/consumer-superhero-chat/internal/config"
-	"github.com/consumer-superhero-chat/internal/consumer"
-	"github.com/consumer-superhero-chat/internal/db"
-	"github.com/consumer-superhero-chat/internal/firebase"
+	"github.com/superhero-match/consumer-superhero-chat/internal/cache"
+	"github.com/superhero-match/consumer-superhero-chat/internal/config"
+	"github.com/superhero-match/consumer-superhero-chat/internal/consumer"
+	"github.com/superhero-match/consumer-superhero-chat/internal/db"
+	"github.com/superhero-match/consumer-superhero-chat/internal/firebase"
 )
 
 // Reader holds all the data relevant.

@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/consumer-superhero-chat/internal/firebase/model"
+	"github.com/superhero-match/consumer-superhero-chat/internal/firebase/model"
 )
 
 // PushNewMessageNotification pushes new message notification to Firebase.

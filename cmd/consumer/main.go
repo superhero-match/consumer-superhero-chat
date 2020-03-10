@@ -14,8 +14,8 @@
 package main
 
 import (
-	"github.com/consumer-superhero-chat/cmd/consumer/reader"
-	"github.com/consumer-superhero-chat/internal/config"
+	"github.com/superhero-match/consumer-superhero-chat/cmd/consumer/reader"
+	"github.com/superhero-match/consumer-superhero-chat/internal/config"
 )
 
 func main() {
