@@ -14,8 +14,7 @@ COPY . /build
 WORKDIR /build/cmd/consumer
 
 # Fetch dependencies.
-RUN go get -u github.com/golang/dep/cmd/dep
-RUN dep ensure -v
+RUN go mod download
 
 # Build the Go app.
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-extldflags "-static"' -o main
