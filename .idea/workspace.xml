@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c69c9ae8-42eb-4226-89df-1852eee942c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/read.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/read.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/consumer/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/consumer/consumer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/firebase/firebase.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/firebase/firebase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/firebase/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/firebase/message.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +59,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\ACER\go\src\github.com\superhero-match\consumer-superhero-chat\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1YkvIWkOvgtyPgguDpS3tSIiFKn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -83,6 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -97,10 +95,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Go_Modules_(vgo)" timestamp="1583848342123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Go_Modules_(vgo)/0.0.1366.728@0.0.1366.728" timestamp="1583848342123" />
     <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583504940919">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583504940919" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1583847947545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583847947545" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1583504875831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
