@@ -15,6 +15,7 @@ package config
 
 // Consumer holds the configuration values for the Kafka consumer.
 type Consumer struct {
-	Brokers []string `env:"KAFKA_BROKERS" default:"[localhost:9092]"`
+	Brokers []string `env:"KAFKA_BROKERS" default:"[192.168.0.105:9092]"`
 	Topic   string   `env:"KAFKA_STORE_CHAT_MESSAGE" default:"store.chat.message"`
+	GroupID string   `env:"KAFKA_CONSUMER_CHAT_GROUP_ID" default:"consumer-chat-group"`
 }
