@@ -6,11 +6,12 @@ db:
   name: 'chat'
 
 consumer:
-  brokers: ['localhost:9092']
+  brokers: ['192.168.0.105:9092']
   topic: 'store.chat.message'
+  group_id: 'consumer-chat-group'
 
 cache:
-  address: 'localhost'
+  address: '192.168.0.105'
   port: ':6379'
   password: 'Awesome85**'
   db: 0

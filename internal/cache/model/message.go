@@ -13,10 +13,22 @@
 */
 package model
 
+import "encoding/json"
+
 // Message holds the data received from client.
 type Message struct {
 	SenderID   string `json:"senderId"`
 	ReceiverID string `json:"receiverId"`
 	Message    string `json:"message"`
 	CreatedAt  string `json:"createdAt"`
+}
+
+// MarshalBinary ...
+func (m Message) MarshalBinary() ([]byte, error) {
+	return json.Marshal(m)
+}
+
+// UnmarshalBinary ...
+func (m *Message) UnmarshalBinary(data []byte) error {
+	return json.Unmarshal(data, &m)
 }

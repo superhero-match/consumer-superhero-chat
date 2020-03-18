@@ -41,7 +41,10 @@ func NewReader(cfg *config.Config) (r *Reader, err error) {
 		return nil, err
 	}
 
-	cs := consumer.NewConsumer(cfg)
+	cs, err := consumer.NewConsumer(cfg)
+	if err != nil {
+		return nil, err
+	}
 
 	f := firebase.NewFirebase(cfg)
 
