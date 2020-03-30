@@ -4,13 +4,6 @@
     <list default="true" id="c69c9ae8-42eb-4226-89df-1852eee942c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/read.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/read.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/model/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/model/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/consumer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/consumer/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/consumer/consumer.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +57,9 @@
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -129,22 +125,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583848528750" />
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1584536726995">
+    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1585574505499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584536726995" />
-    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1584536726995">
+    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585574505499" />
+    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1585574505499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584536726995" />
-    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1584536726994">
+    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585574505499" />
+    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1585574505498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584536726994" />
-    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1584536726995">
+    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585574505498" />
+    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1585574505499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584536726995" />
+    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585574505499" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1583504875831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

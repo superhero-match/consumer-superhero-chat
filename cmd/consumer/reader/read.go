@@ -111,34 +111,36 @@ func (r *Reader) Read() error {
 			return err
 		}
 
-		token, err := r.Cache.GetFirebaseMessagingToken(fmt.Sprintf(r.Cache.TokenKeyFormat, message.ReceiverID))
-		if err != nil || token == nil {
-			fmt.Println("r.Cache.GetFirebaseMessagingToken")
-			fmt.Println(err)
-			fmt.Println(token)
+		if !message.IsOnline {
+			token, err := r.Cache.GetFirebaseMessagingToken(fmt.Sprintf(r.Cache.TokenKeyFormat, message.ReceiverID))
+			if err != nil || token == nil {
+				fmt.Println("r.Cache.GetFirebaseMessagingToken")
+				fmt.Println(err)
+				fmt.Println(token)
 
-			err = r.Consumer.Consumer.Close()
-			if err != nil {
+				err = r.Consumer.Consumer.Close()
+				if err != nil {
+					return err
+				}
+
 				return err
 			}
 
-			return err
-		}
-
-		err = r.Firebase.PushNewMessageNotification(fm.Request{
-			Token:       token.Token,
-			SuperheroID: message.ReceiverID,
-		})
-		if err != nil {
-			fmt.Println("r.Firebase.PushNewMatchNotification")
-			fmt.Println(err)
-
-			err = r.Consumer.Consumer.Close()
+			err = r.Firebase.PushNewMessageNotification(fm.Request{
+				Token:       token.Token,
+				SuperheroID: message.ReceiverID,
+			})
 			if err != nil {
+				fmt.Println("r.Firebase.PushNewMatchNotification")
+				fmt.Println(err)
+
+				err = r.Consumer.Consumer.Close()
+				if err != nil {
+					return err
+				}
+
 				return err
 			}
-
-			return err
 		}
 
 		err = r.Consumer.Consumer.CommitMessages(ctx, m)
