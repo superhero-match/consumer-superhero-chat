@@ -90,28 +90,28 @@ func (r *Reader) Read() error {
 			return err
 		}
 
-		err = r.Cache.StoreMessage(cm.Message{
-			SenderID:   message.SenderID,
-			ReceiverID: message.ReceiverID,
-			Message:    message.Message,
-			CreatedAt:  message.CreatedAt,
-		})
-		if err != nil {
-			fmt.Println("r.Cache.StoreMessage")
-			fmt.Println(err)
-
-			err = r.Consumer.Consumer.Close()
+		if !message.IsOnline {
+			err = r.Cache.StoreMessage(cm.Message{
+				SenderID:   message.SenderID,
+				ReceiverID: message.ReceiverID,
+				Message:    message.Message,
+				CreatedAt:  message.CreatedAt,
+			})
 			if err != nil {
-				fmt.Println("r.Consumer.Consumer.Close()")
+				fmt.Println("r.Cache.StoreMessage")
 				fmt.Println(err)
+
+				err = r.Consumer.Consumer.Close()
+				if err != nil {
+					fmt.Println("r.Consumer.Consumer.Close()")
+					fmt.Println(err)
+
+					return err
+				}
 
 				return err
 			}
 
-			return err
-		}
-
-		if !message.IsOnline {
 			token, err := r.Cache.GetFirebaseMessagingToken(fmt.Sprintf(r.Cache.TokenKeyFormat, message.ReceiverID))
 			if err != nil || token == nil {
 				fmt.Println("r.Cache.GetFirebaseMessagingToken")
