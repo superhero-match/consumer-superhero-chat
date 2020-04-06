@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c69c9ae8-42eb-4226-89df-1852eee942c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/read.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/read.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,22 +129,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583848528750" />
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1585653507309">
+    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1586155806619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585653507309" />
-    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1585653507308">
+    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586155806619" />
+    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1586155806618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585653507308" />
-    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1585653507307">
+    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586155806618" />
+    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1586155806618">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585653507307" />
-    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1585653507308">
+    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586155806618" />
+    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1586155806619">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585653507308" />
+    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586155806619" />
     <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1583504875831">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
