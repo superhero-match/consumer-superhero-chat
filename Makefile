@@ -13,7 +13,7 @@ dkb:
 	docker build -t consumer-superhero-chat .
 
 dkr:
-	docker run consumer-superhero-chat
+	docker run -p "8040:8040" consumer-superhero-chat
 
 launch: dkb dkr
 

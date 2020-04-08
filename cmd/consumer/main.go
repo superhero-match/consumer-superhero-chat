@@ -16,6 +16,7 @@ package main
 import (
 	"github.com/superhero-match/consumer-superhero-chat/cmd/consumer/reader"
 	"github.com/superhero-match/consumer-superhero-chat/internal/config"
+	"github.com/superhero-match/consumer-superhero-chat/internal/health"
 )
 
 func main() {
@@ -24,13 +25,21 @@ func main() {
 		panic(err)
 	}
 
+	client := health.NewClient(cfg)
+
 	r, err := reader.NewReader(cfg)
 	if err != nil {
+		_ = client.ShutdownHealthServer()
+
 		panic(err)
 	}
 
 	err = r.Read()
 	if err != nil {
+		_ = client.ShutdownHealthServer()
+
 		panic(err)
 	}
+
+	_ = client.ShutdownHealthServer()
 }
