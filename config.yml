@@ -26,7 +26,6 @@ firebase:
   content_type: 'application/json'
 
 health:
-  address: '192.168.0.101'
   port: ':8040'
   shutdown_endpoint: '/api/v1/consumer_superhero_chat_health/shutdown'
   content_type: 'application/json'
