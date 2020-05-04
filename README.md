@@ -2,7 +2,7 @@
 Superhero Match is an open source dating app.
 
 ## consumer-superhero-chat
-This micro-service is responsible for consuming new message and storing the data in database and cache and making 
+This micro-service is responsible for consuming new message and storing it in database and cache and making 
 request to Firebase to notify user that there is a new offline message for them to pick up on the server. 
 
 ## Becoming Contributor
