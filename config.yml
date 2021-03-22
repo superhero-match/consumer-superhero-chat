@@ -18,7 +18,7 @@ cache:
   pool_size: 25
   minimum_idle_connections: 10
   maximum_retries: 1
-  message_key_format: 'message.for.%s'
+  message_key_format: 'messages.for.%s'
   token_key_format: 'token.%s'
 
 firebase:

@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c69c9ae8-42eb-4226-89df-1852eee942c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/consumer-superhero-chat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/consumer-superhero-chat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a73300ba-2b85-490b-a2d4-3d9154e6d895.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a73300ba-2b85-490b-a2d4-3d9154e6d895.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/model/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/model/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/read.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/read.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/consumer/reader/reader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/health/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/health/controller/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/health/controller/health.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/health/controller/health.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/health/controller/shutdown.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/health/controller/shutdown.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/health/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/health/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/model/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/model/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/model/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/model/token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/cache/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/cache/token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/cache.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/consumer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/firebase.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/firebase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/config/health.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/config/health.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/consumer/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/consumer/consumer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/consumer/model/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/consumer/model/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/model/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/model/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/db/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/db/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/firebase/firebase.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/firebase/firebase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/firebase/message.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/firebase/message.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/firebase/model/request.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/firebase/model/request.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/health/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/health/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/health/shutdown.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/health/shutdown.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +77,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../superhero-offline-messages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,43 +116,5 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="23" key="#Go_Modules_(vgo)" timestamp="1583848517907">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="23" key="#Go_Modules_(vgo)/0.0.1366.728@0.0.1366.728" timestamp="1583848517907" />
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583504940919">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583504940919" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1583848528750">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583848528750" />
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1587554660095">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587554660095" />
-    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1587554660095">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587554660095" />
-    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1587554660094">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587554660094" />
-    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1587554660095">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587554660095" />
-    <state width="196" height="539" key="HiddenNamespacesPopup" timestamp="1583504875831">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="196" height="539" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1583504875831" />
-    <state x="461" y="0" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1583505108108">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="461" y="0" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.0.1366.728@0.0.1366.728" timestamp="1583505108108" />
   </component>
 </project>
