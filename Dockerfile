@@ -58,4 +58,4 @@ USER appuser
 EXPOSE 8040 8040
 
 # Command to run the executables.
-CMD ["sh", "-c", "( ./health & ) && ./main"]
+CMD ["sh", "-c", "./main"]

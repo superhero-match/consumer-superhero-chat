@@ -6,7 +6,7 @@ This micro-service is responsible for consuming new message and storing it in da
 request to Firebase to notify user that there is a new offline message for them to pick up on the server. 
 
 ## Becoming Contributor
-If you want to become contributor, please send email to this address - `superheromatch@gmail.com`.
+If you want to become contributor, please send email to this address - `info@superhero-match.com`.
 
 ## License
 Copyright 2019-2021 MWSOFT
