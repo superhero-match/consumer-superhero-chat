@@ -23,7 +23,7 @@ import (
 )
 
 // PushNewMessageNotification pushes new message notification to Firebase.
-func (f *Firebase) PushNewMessageNotification(req model.Request) error {
+func (f *firebase) PushNewMessageNotification(req model.Request) error {
 	requestBody, err := json.Marshal(map[string]string{
 		"token":       req.Token,
 		"superheroId": req.SuperheroID,

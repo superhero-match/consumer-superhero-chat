@@ -15,17 +15,23 @@ package firebase
 
 import (
 	"github.com/superhero-match/consumer-superhero-chat/internal/config"
+	"github.com/superhero-match/consumer-superhero-chat/internal/firebase/model"
 )
 
-// Firebase holds all the Firebase related data.
-type Firebase struct {
+// Firebase interface defines Firebase methods.
+type Firebase interface {
+	PushNewMessageNotification(req model.Request) error
+}
+
+// firebase holds all the Firebase related data.
+type firebase struct {
 	FunctionAddress string
 	ContentType     string
 }
 
 // NewFirebase creates new value of type Firebase.
-func NewFirebase(cfg *config.Config) *Firebase {
-	return &Firebase{
+func NewFirebase(cfg *config.Config) Firebase {
+	return &firebase{
 		FunctionAddress: cfg.Firebase.FunctionAddress,
 		ContentType:     cfg.Firebase.ContentType,
 	}
