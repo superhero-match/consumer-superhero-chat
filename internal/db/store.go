@@ -17,14 +17,8 @@ import (
 	"github.com/superhero-match/consumer-superhero-chat/internal/db/model"
 )
 
-//'test_id',
-//	'sender_id',
-//	'receiver_id',
-//	'message',
-//	'2019-09-19'
-
-// StoreMatch saves new match.
-func(db *DB) StoreMessage (m model.Message) error {
+// StoreMessage saves new message.
+func (db *db) StoreMessage(m model.Message) error {
 	_, err := db.stmtInsertNewMessage.Exec(
 		m.ID,
 		m.SenderID,
@@ -38,5 +32,3 @@ func(db *DB) StoreMessage (m model.Message) error {
 
 	return nil
 }
-
-
