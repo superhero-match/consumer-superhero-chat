@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2019 - 2021 MWSOFT
+  Copyright (C) 2019 - 2022 MWSOFT
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -26,7 +26,7 @@ func NewController() (*Controller, error) {
 	return &Controller{}, nil
 }
 
-// RegisterRoutes registers all the superhero_suggestions API routes.
+// RegisterRoutes registers all the health API routes.
 func (ctl *Controller) RegisterRoutes() *gin.Engine {
 	router := gin.Default()
 

@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2019 - 2021 MWSOFT
+  Copyright (C) 2019 - 2022 MWSOFT
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -29,7 +29,8 @@ import (
 	fm "github.com/superhero-match/consumer-superhero-chat/internal/firebase/model"
 )
 
-// Read consumes the Kafka topic and stores new message to DB.
+// Read consumes the Kafka topic and stores new message to DB, cache and then pushes notification
+// to Firebase.
 func (r *reader) Read() error {
 	ctx := context.Background()
 

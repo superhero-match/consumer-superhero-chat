@@ -1,5 +1,5 @@
 /*
-  Copyright (C) 2019 - 2021 MWSOFT
+  Copyright (C) 2019 - 2022 MWSOFT
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -13,9 +13,9 @@
 */
 package model
 
-// Request holds new match request body data that is going to be sent to Firebase.
-// This request will trigger Firebase function that will notify the matched user that
-// they got new match.
+// Request holds new message request body data that is going to be sent to Firebase.
+// This request will trigger Firebase function that will notify the user that
+// they got new message.
 type Request struct {
 	Token       string `json:"token"`
 	SuperheroID string `json:"superheroId"`
