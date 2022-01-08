@@ -14,13 +14,12 @@
 package cache
 
 import (
-	"fmt"
 	"github.com/superhero-match/consumer-superhero-chat/internal/cache/model"
 )
 
 // StoreMessage stores message under one key into list.
-func (c *Cache) StoreMessage(message model.Message) error {
-	err := c.Redis.SAdd(fmt.Sprintf(c.MessagesKeyFormat, message.ReceiverID), message).Err()
+func (c *cache) StoreMessage(key string, message model.Message) error {
+	err := c.Redis.SAdd(key, message).Err()
 	if err != nil {
 		return err
 	}

@@ -15,11 +15,12 @@ package cache
 
 import (
 	"github.com/go-redis/redis"
+
 	"github.com/superhero-match/consumer-superhero-chat/internal/cache/model"
 )
 
-// GetFirebaseMessagingToken fetches choice(like, dislikes are only in DB) from cache.
-func (c *Cache) GetFirebaseMessagingToken(key string) (*model.FirebaseMessagingToken, error) {
+// GetFirebaseMessagingToken fetches users Firebase token from cache.
+func (c *cache) GetFirebaseMessagingToken(key string) (*model.FirebaseMessagingToken, error) {
 	res, err := c.Redis.Get(key).Result()
 	if err != nil && err != redis.Nil {
 		return nil, err
