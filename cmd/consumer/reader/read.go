@@ -17,10 +17,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/google/uuid"
 	"strings"
 	"time"
 
+	"github.com/google/uuid"
 	"go.uber.org/zap"
 
 	cm "github.com/superhero-match/consumer-superhero-chat/internal/cache/model"
@@ -29,13 +29,13 @@ import (
 	fm "github.com/superhero-match/consumer-superhero-chat/internal/firebase/model"
 )
 
-// Read consumes the Kafka topic and stores the match to DB.
-func (r *Reader) Read() error {
+// Read consumes the Kafka topic and stores new message to DB.
+func (r *reader) Read() error {
 	ctx := context.Background()
 
 	for {
 		fmt.Println("before FetchMessage")
-		m, err := r.Consumer.Consumer.FetchMessage(ctx)
+		m, err := r.Consumer.FetchMessage(ctx)
 		fmt.Print("after FetchMessage")
 		if err != nil {
 			r.Logger.Error(
@@ -44,7 +44,7 @@ func (r *Reader) Read() error {
 				zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 			)
 
-			err = r.Consumer.Consumer.Close()
+			err = r.Consumer.Close()
 			if err != nil {
 				r.Logger.Error(
 					"failed to close consumer",
@@ -77,7 +77,7 @@ func (r *Reader) Read() error {
 				zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 			)
 
-			err = r.Consumer.Consumer.Close()
+			err = r.Consumer.Close()
 			if err != nil {
 				r.Logger.Error(
 					"failed to close consumer",
@@ -97,7 +97,7 @@ func (r *Reader) Read() error {
 			ReceiverID: message.ReceiverID,
 			Message:    message.Message,
 			CreatedAt:  message.CreatedAt,
-		}, )
+		})
 		if err != nil {
 			r.Logger.Error(
 				"failed to store message in database",
@@ -105,7 +105,7 @@ func (r *Reader) Read() error {
 				zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 			)
 
-			err = r.Consumer.Consumer.Close()
+			err = r.Consumer.Close()
 			if err != nil {
 				r.Logger.Error(
 					"failed to close consumer",
@@ -120,7 +120,7 @@ func (r *Reader) Read() error {
 		}
 
 		if !message.IsOnline {
-			err = r.Cache.StoreMessage(cm.Message{
+			err = r.Cache.StoreMessage(fmt.Sprintf(r.MessagesKeyFormat, message.ReceiverID), cm.Message{
 				SenderID:   message.SenderID,
 				ReceiverID: message.ReceiverID,
 				Message:    message.Message,
@@ -133,7 +133,7 @@ func (r *Reader) Read() error {
 					zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 				)
 
-				err = r.Consumer.Consumer.Close()
+				err = r.Consumer.Close()
 				if err != nil {
 					r.Logger.Error(
 						"failed to close consumer",
@@ -147,7 +147,7 @@ func (r *Reader) Read() error {
 				return err
 			}
 
-			token, err := r.Cache.GetFirebaseMessagingToken(fmt.Sprintf(r.Cache.TokenKeyFormat, message.ReceiverID))
+			token, err := r.Cache.GetFirebaseMessagingToken(fmt.Sprintf(r.TokenKeyFormat, message.ReceiverID))
 			if err != nil || token == nil {
 				r.Logger.Error(
 					"failed to fetch Firebase token from cache",
@@ -155,7 +155,7 @@ func (r *Reader) Read() error {
 					zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 				)
 
-				err = r.Consumer.Consumer.Close()
+				err = r.Consumer.Close()
 				if err != nil {
 					r.Logger.Error(
 						"failed to close consumer",
@@ -180,7 +180,7 @@ func (r *Reader) Read() error {
 					zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 				)
 
-				err = r.Consumer.Consumer.Close()
+				err = r.Consumer.Close()
 				if err != nil {
 					r.Logger.Error(
 						"failed to close consumer",
@@ -195,7 +195,7 @@ func (r *Reader) Read() error {
 			}
 		}
 
-		err = r.Consumer.Consumer.CommitMessages(ctx, m)
+		err = r.Consumer.CommitMessages(ctx, m)
 		if err != nil {
 			r.Logger.Error(
 				"failed to commit message",
@@ -203,7 +203,7 @@ func (r *Reader) Read() error {
 				zap.String("time", time.Now().UTC().Format(r.TimeFormat)),
 			)
 
-			err = r.Consumer.Consumer.Close()
+			err = r.Consumer.Close()
 			if err != nil {
 				r.Logger.Error(
 					"failed to close consumer",
